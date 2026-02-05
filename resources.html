@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Resources — Crisis Support, Apps, and Finding Help</title>
+    <meta name="description" content="Curated depression resources including crisis hotlines, therapy apps, support groups, and how to find a mental health provider.">
+    <link rel="canonical" href="https://depression.md/resources.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        
+        header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .header-inner { max-width: 1100px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: var(--accent); }
+        
+        .page-hero { padding: 120px 24px 48px; max-width: 720px; margin: 0 auto; }
+        .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        h1 { font-family: var(--font-display); font-size: 42px; font-weight: 700; margin-bottom: 12px; }
+        .page-subtitle { font-size: 18px; color: var(--text-secondary); }
+        
+        main { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+        
+        .crisis-banner { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 0 8px 8px 0; padding: 20px 24px; margin-bottom: 48px; }
+        .crisis-banner h2 { font-family: var(--font-display); font-size: 20px; color: #dc2626; margin-bottom: 12px; }
+        .crisis-banner .crisis-item { margin-bottom: 12px; }
+        .crisis-banner .crisis-item:last-child { margin-bottom: 0; }
+        .crisis-banner strong { color: #991b1b; }
+        .crisis-banner p { color: #7f1d1d; font-size: 15px; line-height: 1.6; }
+        
+        .section { margin-bottom: 64px; }
+        .section h2 { font-family: var(--font-display); font-size: 28px; margin-bottom: 20px; }
+        .section p { color: var(--text-secondary); margin-bottom: 16px; }
+        
+        .resource-grid { display: grid; gap: 16px; margin-top: 24px; }
+        .resource-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+        .resource-card h3 { font-family: var(--font-display); font-size: 18px; margin-bottom: 6px; color: var(--text-primary); }
+        .resource-card p { font-size: 15px; color: var(--text-secondary); margin-bottom: 12px; }
+        .resource-card .meta { font-size: 13px; color: var(--text-muted); }
+        .resource-card a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        .resource-card a:hover { text-decoration: underline; }
+        
+        .tag { display: inline-block; font-size: 11px; font-weight: 600; background: var(--bg-secondary); color: var(--accent); padding: 4px 8px; border-radius: 4px; margin-right: 6px; }
+        
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+        .footer-brand .logo { display: inline-block; margin-bottom: 12px; }
+        .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .footer-links h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: 12px; }
+        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 8px; }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
+        
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">depression<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/depression-overview.html">Learn</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="breadcrumb"><a href="/">Home</a> → Resources</div>
+        <h1>Depression Resources</h1>
+        <p class="page-subtitle">Crisis support, therapy apps, support groups, and finding professional help.</p>
+    </div>
+
+    <main>
+        <div class="crisis-banner">
+            <h2>If you're in crisis</h2>
+            <div class="crisis-item">
+                <p><strong>988 Suicide & Crisis Lifeline</strong><br>
+                Call or text <strong>988</strong> — Available 24/7 nationwide. Free and confidential support for people in distress, prevention and crisis resources.</p>
+            </div>
+            <div class="crisis-item">
+                <p><strong>Crisis Text Line</strong><br>
+                Text <strong>HOME</strong> to <strong>741741</strong> — Free, 24/7 support via text message. Connects you to a trained crisis counselor.</p>
+            </div>
+            <div class="crisis-item">
+                <p><strong>SAMHSA National Helpline</strong><br>
+                Call <strong>1-800-662-HELP (4357)</strong> — 24/7 free, confidential treatment referral and information service.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Finding a Therapist</h2>
+            <p>Evidence-based therapy (CBT, IPT) is highly effective for depression. Here are trusted directories to find licensed providers:</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Psychology Today Therapist Finder</h3>
+                    <p>Searchable directory of therapists, psychiatrists, and treatment centers. Filter by location, insurance, specialty, and treatment approach.</p>
+                    <div class="meta"><a href="https://www.psychologytoday.com/us/therapists" target="_blank">psychologytoday.com/us/therapists</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>NAMI Provider Directory</h3>
+                    <p>National Alliance on Mental Illness directory of mental health providers. Includes reviews and insurance information.</p>
+                    <div class="meta"><a href="https://www.nami.org/Support-Education/NAMI-HelpLine" target="_blank">nami.org</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Open Path Psychotherapy Collective</h3>
+                    <p>Nonprofit network offering affordable in-person and online therapy ($30-$80 per session). For people without insurance or high deductibles.</p>
+                    <div class="meta"><a href="https://openpathcollective.org" target="_blank">openpathcollective.org</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Online Therapy Platforms</h2>
+            <p>Convenient, affordable access to licensed therapists via video, phone, or text messaging.</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="tag">Most Popular</span>
+                    <h3>BetterHelp</h3>
+                    <p>Largest online therapy platform. Unlimited messaging with your therapist, plus live sessions. Starting at $65/week, many insurance plans accepted.</p>
+                    <div class="meta"><a href="https://www.betterhelp.com" target="_blank">betterhelp.com</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Talkspace</h3>
+                    <p>Licensed therapists via video, voice, or text. Psychiatry services available. Accepts many insurance plans including Cigna, Optum, and Medicare.</p>
+                    <div class="meta"><a href="https://www.talkspace.com" target="_blank">talkspace.com</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Cerebral</h3>
+                    <p>Online therapy and medication management. Prescribers available for antidepressant medication. Monthly subscription model.</p>
+                    <div class="meta"><a href="https://cerebral.com" target="_blank">cerebral.com</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Mental Health Apps</h2>
+            <p>Research-backed apps for symptom tracking, cognitive exercises, and self-guided interventions.</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="tag">Evidence-Based</span>
+                    <h3>Sanvello</h3>
+                    <p>CBT-based app for depression and anxiety. Mood tracking, coping tools, guided journeys. Free version available, premium $8.99/month.</p>
+                    <div class="meta"><a href="https://www.sanvello.com" target="_blank">sanvello.com</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Moodpath</h3>
+                    <p>Daily psychological assessments, progress tracking, and personalized exercises. Generates clinical reports to share with your therapist.</p>
+                    <div class="meta"><a href="https://mymoodpath.com" target="_blank">mymoodpath.com</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Wysa</h3>
+                    <p>AI chatbot offering evidence-based CBT techniques. Anonymous, free to use. Optional human coaching available.</p>
+                    <div class="meta"><a href="https://www.wysa.io" target="_blank">wysa.io</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Support Groups</h2>
+            <p>Peer-led support groups provide community, shared experiences, and coping strategies.</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>NAMI Support Groups</h3>
+                    <p>Free peer-led support groups for people living with mental health conditions and their families. Available in-person and online nationwide.</p>
+                    <div class="meta"><a href="https://www.nami.org/Support-Education/Support-Groups" target="_blank">nami.org/support-groups</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Depression and Bipolar Support Alliance (DBSA)</h3>
+                    <p>Peer-led, facilitated support groups for depression and bipolar disorder. Over 500 chapters across the US.</p>
+                    <div class="meta"><a href="https://www.dbsalliance.org/support/chapters-and-support-groups/" target="_blank">dbsalliance.org</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>7 Cups</h3>
+                    <p>Free online emotional support and counseling. Anonymous chat with trained listeners. Over 160,000 volunteers available 24/7.</p>
+                    <div class="meta"><a href="https://www.7cups.com" target="_blank">7cups.com</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Educational Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>National Institute of Mental Health (NIMH)</h3>
+                    <p>Official government research on depression. Clinical trials, statistics, treatment information, and patient education materials.</p>
+                    <div class="meta"><a href="https://www.nimh.nih.gov/health/topics/depression" target="_blank">nimh.nih.gov/depression</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Depression & Bipolar Support Alliance</h3>
+                    <p>Patient-centered information, wellness tools, support group locator, and advocacy resources.</p>
+                    <div class="meta"><a href="https://www.dbsalliance.org" target="_blank">dbsalliance.org</a></div>
+                </div>
+                <div class="resource-card">
+                    <h3>Mental Health America (MHA)</h3>
+                    <p>Free mental health screening tools, educational resources, and advocacy. Over 2 million screenings completed annually.</p>
+                    <div class="meta"><a href="https://www.mhanational.org/conditions/depression" target="_blank">mhanational.org</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">depression<span>.md</span></a>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based mental health information, reviewed by licensed clinicians.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Learn</h4>
+                <a href="/depression-overview.html">Depression Overview</a>
+                <a href="/treatment.html">Treatment Options</a>
+                <a href="/faq.html">FAQ</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/resources.html">Crisis Support</a>
+                <a href="/resources.html#therapists">Find a Therapist</a>
+                <a href="/resources.html#apps">Apps & Tools</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review">Medical Review</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 depression.md · A <a href="https://thrive.md" style="color: var(--text-muted); text-decoration: none;">thrive.md</a> property</p>
+            <p>Privacy Policy · Terms of Use</p>
+        </div>
+    </footer>
+</body>
+</html>

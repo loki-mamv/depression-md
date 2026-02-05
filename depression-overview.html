@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Depressive Disorder (MDD) — Complete Clinical Guide</title>
+    <meta name="description" content="Comprehensive guide to major depression: symptoms, causes, diagnosis, epidemiology, and neurobiology. Evidence-based information reviewed by clinicians.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--bg-primary:#ffffff;--bg-secondary:#f8fafc;--bg-tertiary:#f1f5f9;--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#94a3b8;--accent:#0d9488;--accent-dark:#0f766e;--accent-light:#ccfbf1;--border:#e2e8f0;--font-display:'Source Serif 4',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--font-body);background:#fafaf9;color:var(--text-primary);line-height:1.7;font-size:16px}
+        header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+        .header-inner{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+        .logo{font-family:var(--font-display);font-size:22px;font-weight:600;color:var(--text-primary);text-decoration:none}
+        .logo span{color:var(--accent)}
+        nav{display:flex;gap:32px}
+        nav a{color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
+        nav a:hover{color:var(--accent)}
+        .article-hero{padding:120px 24px 48px;max-width:720px;margin:0 auto}
+        .breadcrumb{font-size:13px;color:var(--text-muted);margin-bottom:16px}
+        .breadcrumb a{color:var(--accent);text-decoration:none}
+        h1{font-family:var(--font-display);font-size:clamp(32px,5vw,42px);font-weight:700;line-height:1.2;margin-bottom:16px}
+        .article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--text-muted);margin-bottom:24px}
+        .article-subtitle{font-size:18px;color:var(--text-secondary);line-height:1.7}
+        .key-facts{background:var(--bg-secondary);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin:32px auto 0;max-width:720px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+        .key-fact{text-align:center}
+        .key-fact-number{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--accent)}
+        .key-fact-label{font-size:13px;color:var(--text-secondary);margin-top:2px}
+        main{max-width:720px;margin:0 auto;padding:48px 24px}
+        h2{font-family:var(--font-display);font-size:26px;font-weight:700;margin:48px 0 16px;padding-top:16px}
+        h2:first-child{margin-top:0}
+        h3{font-family:var(--font-display);font-size:20px;font-weight:600;margin:32px 0 12px}
+        p{font-size:17px;color:var(--text-secondary);margin-bottom:16px}
+        ul,ol{margin:0 0 16px 24px;color:var(--text-secondary)}
+        li{margin-bottom:8px;font-size:16px}
+        strong{color:var(--text-primary)}
+        .callout{background:var(--accent-light);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0}
+        .callout p{font-size:15px;color:var(--text-primary);margin-bottom:0}
+        .callout strong{color:var(--accent-dark)}
+        table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+        th,td{padding:12px;text-align:left;border-bottom:1px solid var(--border)}
+        th{background:var(--bg-secondary);font-weight:600;color:var(--text-primary)}
+        td{color:var(--text-secondary)}
+        footer{background:var(--bg-secondary);border-top:1px solid var(--border);padding:48px 24px}
+        .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+        .footer-brand .logo{display:inline-block;margin-bottom:12px}
+        .footer-brand p{font-size:14px;color:var(--text-muted)}
+        .footer-links h4{font-size:12px;font-weight:600;text-transform:uppercase;margin-bottom:12px}
+        .footer-links a{display:block;color:var(--text-muted);text-decoration:none;font-size:14px;margin-bottom:8px}
+        .footer-links a:hover{color:var(--accent)}
+        .footer-bottom{max-width:1100px;margin:32px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted)}
+        @media (max-width:768px){nav{display:none}.key-facts{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">depression<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/resources.html">Resources</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="article-hero">
+        <div class="breadcrumb"><a href="/">Home</a> → Depression Overview</div>
+        <h1>Major Depressive Disorder</h1>
+        <div class="article-meta"><span>Clinically Reviewed</span><span>Updated February 2026</span></div>
+        <p class="article-subtitle">Comprehensive guide to understanding major depression — symptoms, causes, diagnosis, and epidemiology.</p>
+    </div>
+
+    <div class="key-facts">
+        <div class="key-fact">
+            <div class="key-fact-number">21M</div>
+            <div class="key-fact-label">US adults affected annually</div>
+        </div>
+        <div class="key-fact">
+            <div class="key-fact-number">280M</div>
+            <div class="key-fact-label">Global prevalence (WHO)</div>
+        </div>
+        <div class="key-fact">
+            <div class="key-fact-number">40%</div>
+            <div class="key-fact-label">Heritability estimate</div>
+        </div>
+    </div>
+
+    <main>
+        <h2>Overview</h2>
+        <p>Major Depressive Disorder (MDD) is a serious mental health condition characterized by persistent sadness, loss of interest in activities, and a range of emotional and physical symptoms that significantly interfere with daily life. Unlike normal sadness or grief, depression is a pervasive condition lasting weeks, months, or years.</p>
+        <p>MDD affects more than 280 million people worldwide and is the leading cause of disability globally. In the United States, 21 million adults (8.4% of the population) experience at least one major depressive episode annually.</p>
+
+        <h2>Symptoms</h2>
+        <p>The DSM-5-TR requires five or more of the following symptoms to be present during the same two-week period, with at least one symptom being depressed mood or loss of interest:</p>
+        <ul>
+            <li><strong>Depressed mood</strong> — feeling sad, empty, or hopeless most of the day, nearly every day</li>
+            <li><strong>Loss of interest or pleasure</strong> — markedly diminished interest in all or almost all activities</li>
+            <li><strong>Weight changes</strong> — significant weight loss or gain (>5% body weight in a month)</li>
+            <li><strong>Sleep disturbances</strong> — insomnia or hypersomnia nearly every day</li>
+            <li><strong>Psychomotor changes</strong> — agitation or retardation observable by others</li>
+            <li><strong>Fatigue</strong> — loss of energy nearly every day</li>
+            <li><strong>Worthlessness or guilt</strong> — feelings of worthlessness or excessive/inappropriate guilt</li>
+            <li><strong>Cognitive difficulties</strong> — diminished ability to think, concentrate, or make decisions</li>
+            <li><strong>Suicidal thoughts</strong> — recurrent thoughts of death, suicidal ideation, or suicide attempt</li>
+        </ul>
+
+        <div class="callout">
+            <p><strong>Diagnosis requires:</strong> Symptoms cause clinically significant distress or impairment in functioning, are not attributable to substance use or another medical condition, and have never been a manic or hypomanic episode.</p>
+        </div>
+
+        <h2>Causes & Risk Factors</h2>
+        <p>Depression arises from a complex interaction of genetic, biological, environmental, and psychological factors.</p>
+
+        <h3>Genetic Factors</h3>
+        <p>Twin studies estimate heritability at approximately 40%, indicating moderate genetic contribution. First-degree relatives of individuals with MDD have a 2-3 times higher risk. Genome-wide association studies have identified over 100 genetic loci associated with depression risk.</p>
+
+        <h3>Neurobiological Factors</h3>
+        <p>Neuroimaging studies show structural and functional changes in depression:</p>
+        <ul>
+            <li>Reduced hippocampal volume (associated with stress and cortisol)</li>
+            <li>Prefrontal cortex dysfunction (affecting emotion regulation)</li>
+            <li>Amygdala hyperactivity (heightened negative emotional processing)</li>
+            <li>Disrupted default mode network connectivity</li>
+        </ul>
+
+        <h3>Neurotransmitter Dysregulation</h3>
+        <table>
+            <tr>
+                <th>Neurotransmitter</th>
+                <th>Role in Depression</th>
+            </tr>
+            <tr>
+                <td><strong>Serotonin</strong></td>
+                <td>Mood regulation, sleep, appetite. Low levels associated with depression.</td>
+            </tr>
+            <tr>
+                <td><strong>Norepinephrine</strong></td>
+                <td>Energy, alertness, motivation. Deficiency linked to fatigue and psychomotor changes.</td>
+            </tr>
+            <tr>
+                <td><strong>Dopamine</strong></td>
+                <td>Reward, pleasure, motivation. Reduced activity in anhedonia.</td>
+            </tr>
+            <tr>
+                <td><strong>GABA</strong></td>
+                <td>Inhibitory neurotransmitter. Altered levels in anxiety comorbid with depression.</td>
+            </tr>
+        </table>
+
+        <h3>Environmental Risk Factors</h3>
+        <ul>
+            <li><strong>Childhood adversity</strong> — abuse, neglect, parental loss (2-3x increased risk)</li>
+            <li><strong>Chronic stress</strong> — work, financial, relational</li>
+            <li><strong>Trauma</strong> — physical or emotional traumatic events</li>
+            <li><strong>Social isolation</strong> — lack of social support</li>
+            <li><strong>Medical illness</strong> — chronic pain, cancer, cardiovascular disease, diabetes</li>
+            <li><strong>Substance use</strong> — alcohol, cannabis, stimulants</li>
+        </ul>
+
+        <h2>Epidemiology</h2>
+        <ul>
+            <li><strong>Prevalence:</strong> 8.4% of US adults (21 million) experience MDD annually</li>
+            <li><strong>Lifetime prevalence:</strong> Approximately 20% (1 in 5 people will experience depression in their lifetime)</li>
+            <li><strong>Gender:</strong> Women are twice as likely as men (10.5% vs 5.5%)</li>
+            <li><strong>Age:</strong> Highest rates in 18-25 age group (17.0%)</li>
+            <li><strong>Comorbidity:</strong> 75% of people with MDD have at least one other psychiatric disorder</li>
+        </ul>
+
+        <h2>Diagnosis</h2>
+        <p>Clinical diagnosis involves structured interview, DSM-5-TR criteria assessment, and screening instruments:</p>
+        <ul>
+            <li><strong>PHQ-9 (Patient Health Questionnaire-9)</strong> — Most widely used screening tool. Score ≥10 indicates moderate-to-severe depression.</li>
+            <li><strong>Hamilton Depression Rating Scale (HAM-D)</strong> — Clinician-administered, 17-21 items. Gold standard in research.</li>
+            <li><strong>Beck Depression Inventory (BDI-II)</strong> — 21-item self-report measuring severity.</li>
+        </ul>
+
+        <p>Medical workup should rule out thyroid disorders, vitamin deficiencies (B12, D), anemia, and other conditions that can mimic depression.</p>
+
+        <h2>When to Seek Help</h2>
+        <p>Seek professional evaluation if:</p>
+        <ul>
+            <li>Symptoms persist for more than two weeks</li>
+            <li>Depression interferes with work, relationships, or daily activities</li>
+            <li>You have thoughts of self-harm or suicide</li>
+            <li>You're using alcohol or drugs to cope</li>
+        </ul>
+
+        <div class="callout" style="background:#fef2f2;border-left-color:#dc2626">
+            <p><strong>If you're in crisis:</strong> Call or text 988 (Suicide & Crisis Lifeline) or text HOME to 741741 (Crisis Text Line). Available 24/7.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">depression<span>.md</span></a>
+                <p>Evidence-based mental health information, part of the thrive.md network.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Learn</h4>
+                <a href="/depression-overview.html">Depression Overview</a>
+                <a href="/treatment.html">Treatment Options</a>
+                <a href="/faq.html">FAQ</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/resources.html">Crisis Support</a>
+                <a href="/resources.html">Find a Therapist</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy">Editorial Policy</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 depression.md</p>
+            <p>Privacy · Terms</p>
+        </div>
+    </footer>
+</body>
+</html>
