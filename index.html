@@ -1222,6 +1222,7 @@
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
                 let sseBuffer = '';
+                let fullResponse = '';
 
                 while (true) {
                     const { done, value } = await reader.read();
@@ -1229,7 +1230,7 @@
                     
                     sseBuffer += decoder.decode(value, { stream: true });
                     const lines = sseBuffer.split('\n');
-                    sseBuffer = lines.pop(); // keep incomplete line in buffer
+                    sseBuffer = lines.pop();
                     
                     for (const line of lines) {
                         if (line.startsWith('data: ')) {
@@ -1237,11 +1238,18 @@
                             if (data === '[DONE]') continue;
                             try {
                                 const parsed = JSON.parse(data);
-                                if (parsed.text) typewriter.add(parsed.text);
-                            } catch (e) { /* skip unparseable */ }
+                                if (parsed.text) { typewriter.add(parsed.text); fullResponse += parsed.text; }
+                            } catch (e) {}
                         }
                     }
                 }
+
+                // Track query
+                fetch('https://mikes-mac-mini.platy-paradise.ts.net:18791/api/track', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'X-API-Key': '3460683416d20694dc8f05cdb01af378' },
+                    body: JSON.stringify({ site: 'depression.md', query: question, response: fullResponse.slice(0, 500), session_id: SESSION_ID }),
+                }).catch(() => {});
 
                 await typewriter.finish();
             } catch (error) {
