@@ -897,9 +897,10 @@
                 </button>
             </div>
             <div id="qa-suggestions" class="qa-suggestions">
-                <span onclick="askSuggestion(this)">What causes depression?</span>
+                <span onclick="askSuggestion(this)">What are the symptoms of depression?</span>
                 <span onclick="askSuggestion(this)">Is depression genetic?</span>
-                <span onclick="askSuggestion(this)">Therapy vs medication</span>
+                <span onclick="askSuggestion(this)">Therapy vs medication — which works better?</span>
+                <span onclick="askSuggestion(this)">How long does depression treatment take?</span>
             </div>
             <div class="chat-note">Answers sourced from peer-reviewed research and clinical guidelines. Not a substitute for professional medical advice.</div>
         </div>
@@ -944,6 +945,21 @@
             <p>Major Depressive Disorder (MDD) is a serious mental health condition characterized by persistent sadness, loss of interest in activities, and a range of emotional and physical symptoms that significantly interfere with daily life.</p>
             <p>Unlike normal sadness or grief, which are temporary responses to life events, depression is a pervasive condition lasting weeks, months, or years. It affects how you feel, think, and handle daily activities — including sleep, eating, and work.</p>
             <p>Depression is the leading cause of disability worldwide, affecting more than 280 million people globally. In the United States, 21 million adults (8.4% of the population) experience at least one major depressive episode annually. Women are nearly twice as likely as men to be diagnosed with depression.</p>
+
+            <div style="background: var(--bg-secondary); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 24px 0;">
+                <strong style="display: block; margin-bottom: 8px; color: var(--accent-dark);">🔑 Core Symptoms of Depression (DSM-5)</strong>
+                <ul style="margin: 0 0 0 20px; color: var(--text-secondary); font-size: 14px; line-height: 1.8;">
+                    <li>Persistent sad, anxious, or "empty" mood most of the day</li>
+                    <li>Loss of interest in activities once enjoyed (anhedonia)</li>
+                    <li>Changes in appetite or weight (significant loss or gain)</li>
+                    <li>Sleep disturbances — insomnia or sleeping too much</li>
+                    <li>Fatigue and loss of energy nearly every day</li>
+                    <li>Feelings of worthlessness or excessive guilt</li>
+                    <li>Difficulty thinking, concentrating, or making decisions</li>
+                    <li>Recurrent thoughts of death or suicide</li>
+                </ul>
+                <p style="margin: 8px 0 0 0; font-size: 13px; color: var(--text-muted);">Diagnosis requires 5+ symptoms for at least 2 weeks, including depressed mood or loss of interest.</p>
+            </div>
         </section>
 
         <section class="section" id="types">
@@ -1000,6 +1016,30 @@
             </ul>
         </section>
 
+        <section class="section" id="related">
+            <div class="section-label">Related Topics</div>
+            <h2>Commonly co-occurring conditions</h2>
+            <p>Depression rarely occurs in isolation. Understanding related conditions helps with more accurate diagnosis and comprehensive treatment.</p>
+            <div class="types-grid">
+                <div class="type-card">
+                    <h3><a href="https://anxiety.md" style="color: var(--accent); text-decoration: none;">Anxiety Disorders →</a></h3>
+                    <p>Anxiety and depression co-occur in over 50% of cases, sharing overlapping brain chemistry and often responding to similar treatments.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://bipolar.md" style="color: var(--accent); text-decoration: none;">Bipolar Disorder →</a></h3>
+                    <p>Bipolar disorder includes depressive episodes that look identical to MDD. Accurate diagnosis is critical — treatment differs significantly.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://ptsd.md" style="color: var(--accent); text-decoration: none;">PTSD →</a></h3>
+                    <p>Trauma often triggers depression. PTSD and depression co-occur in up to 48% of PTSD cases.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://ocd.md" style="color: var(--accent); text-decoration: none;">OCD →</a></h3>
+                    <p>The chronic distress of OCD frequently leads to clinical depression. Up to 63% of people with OCD experience co-occurring depression.</p>
+                </div>
+            </div>
+        </section>
+
         <div class="cta" id="resources">
             <h2>Ready to take the next step?</h2>
             <p>If depression is affecting your quality of life, professional support can help. Most people improve significantly with appropriate treatment.</p>
@@ -1031,6 +1071,11 @@
                 <a href="https://thrive.md/editorial-policy">Editorial Policy</a>
                 <a href="https://thrive.md/medical-review">Medical Review</a>
                 <a href="mailto:hello@thrive.md">Contact</a>
+                <h4 style="margin-top: 16px;">Related Topics</h4>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
             </div>
         </div>
         <div class="footer-bottom">
