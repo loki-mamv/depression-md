@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://depression.md/blog/seasonal-depression-sad-treatment/#article"},
           "wordCount": "682",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "When should I start light therapy for SAD?", "acceptedAnswer": {"@type": "Answer", "text": "Ideally, start in early fall (September-October) before symptoms fully develop, especially if you have a reliable pattern. If symptoms have already arrived, start immediately. Use 10,000 lux for 20-30 minutes within the first hour of waking, every morning through spring."}}, {"@type": "Question", "name": "Can SAD happen in summer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, though it's much rarer. Summer-pattern SAD (about 10% of SAD cases) involves insomnia, decreased appetite, weight loss, and agitation rather than the oversleeping and overeating of winter SAD. It may be triggered by excessive heat and humidity rather than light changes."}}, {"@type": "Question", "name": "Is SAD real or just the winter blues?", "acceptedAnswer": {"@type": "Answer", "text": "SAD is a clinically recognized subtype of major depressive disorder in the DSM-5. It involves the same neurobiological changes as non-seasonal depression \u2014 altered serotonin function, disrupted circadian rhythms, and changes in brain activity. The 'winter blues' is a milder, subclinical version that doesn't meet full criteria for depression."}}, {"@type": "Question", "name": "Does vitamin D help with seasonal depression?", "acceptedAnswer": {"@type": "Answer", "text": "Vitamin D levels do drop in winter and correlate with mood, but clinical trials of vitamin D supplementation for SAD have produced mixed results. It may help as part of a broader approach but shouldn't replace light therapy or other proven treatments. If your levels are deficient (below 20 ng/mL), supplementation is worth discussing with your doctor regardless."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

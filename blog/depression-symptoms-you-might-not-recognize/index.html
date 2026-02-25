@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://depression.md/blog/depression-symptoms-you-might-not-recognize/#article"},
           "wordCount": "737",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can you be depressed without feeling sad?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Depression commonly presents as numbness, irritability, physical pain, or loss of interest without prominent sadness. This is why many people \u2014 especially men \u2014 don't recognize their symptoms as depression."}}, {"@type": "Question", "name": "What does depression fatigue feel like?", "acceptedAnswer": {"@type": "Answer", "text": "Depression fatigue goes beyond normal tiredness. It's a bone-deep exhaustion that sleep doesn't fix. Simple tasks like showering or making a phone call can feel like running a marathon. This fatigue reflects changes in brain chemistry and inflammatory pathways, not laziness."}}, {"@type": "Question", "name": "Can depression cause memory problems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Depression impairs working memory, concentration, and processing speed. Some people describe it as thinking through molasses. These cognitive effects can persist even after mood improves, though they typically resolve with sustained treatment."}}, {"@type": "Question", "name": "How do I know if I'm depressed or just going through a hard time?", "acceptedAnswer": {"@type": "Answer", "text": "Situational sadness responds to circumstances \u2014 it eases when the situation improves. Depression persists regardless of circumstances, lasts at least two weeks, and affects multiple areas of functioning (sleep, appetite, concentration, energy, interest). If you're unsure, a brief screening with a doctor can clarify."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

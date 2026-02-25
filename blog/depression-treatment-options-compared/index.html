@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://depression.md/blog/depression-treatment-options-compared/#article"},
           "wordCount": "824",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How long do antidepressants take to work?", "acceptedAnswer": {"@type": "Answer", "text": "Most antidepressants take 4-6 weeks to reach full effect, though some people notice improvements in sleep and appetite within the first 1-2 weeks. Side effects often appear before benefits, which is why many people quit too early. Give the medication a fair trial of 6-8 weeks before concluding it doesn't work."}}, {"@type": "Question", "name": "Can I stop antidepressants once I feel better?", "acceptedAnswer": {"@type": "Answer", "text": "Don't stop abruptly. Guidelines recommend continuing medication for at least 6-12 months after remission to prevent relapse. For people with recurrent episodes (3+), longer-term or indefinite treatment may be appropriate. Always taper gradually under medical supervision to avoid discontinuation symptoms."}}, {"@type": "Question", "name": "Is therapy or medication better for depression?", "acceptedAnswer": {"@type": "Answer", "text": "Neither is universally better. For mild-to-moderate depression, they perform comparably. For severe depression, combination treatment is most effective. Therapy has lower relapse rates after completion; medication works faster for acute episodes. Your preference matters \u2014 treatment you'll actually engage with is the best treatment."}}, {"@type": "Question", "name": "What is treatment-resistant depression?", "acceptedAnswer": {"@type": "Answer", "text": "Treatment-resistant depression is generally defined as failure to respond adequately to at least two different antidepressants given at appropriate doses for adequate duration. It affects about 30% of people with major depression. Options include switching medications, augmentation strategies, TMS, ketamine/esketamine, and clinical trials."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://depression.md/blog/depression-and-relationships/#article"},
           "wordCount": "744",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can a relationship cause depression?", "acceptedAnswer": {"@type": "Answer", "text": "Relationship distress is a significant risk factor for depression. Chronic conflict, emotional neglect, infidelity, and controlling dynamics can all trigger depressive episodes. At the same time, depression can create relationship problems. The causality often runs both directions."}}, {"@type": "Question", "name": "Should I stay with a depressed partner?", "acceptedAnswer": {"@type": "Answer", "text": "There's no universal answer. If your partner is seeking treatment and the relationship was healthy before the depression, there's strong reason for optimism \u2014 depression is treatable, and most episodes resolve. If your partner refuses help, is abusive, or the relationship was already struggling, depression adds complexity but doesn't obligate you to stay in a harmful situation."}}, {"@type": "Question", "name": "How do I tell my partner I think they're depressed?", "acceptedAnswer": {"@type": "Answer", "text": "Lead with observations, not diagnoses: 'I've noticed you seem really tired and haven't been enjoying things lately \u2014 I'm worried about you.' Express concern rather than frustration. Avoid 'You're depressed' as an accusation. Offer to help find resources or attend an appointment together."}}, {"@type": "Question", "name": "Can depression make you fall out of love?", "acceptedAnswer": {"@type": "Answer", "text": "Depression can suppress the ability to feel love, pleasure, and connection \u2014 but suppression isn't the same as absence. Most people find that their feelings return as depression lifts. The risk is that untreated depression lasting months or years causes real relationship damage that outlasts the episode itself."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
