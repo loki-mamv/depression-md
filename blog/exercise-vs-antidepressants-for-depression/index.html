@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+<script>
+  // AI answer-engine attribution: capture utm/app/referrer signals on landing
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search);
+      var ref = document.referrer || '';
+      var refHost = '';
+      if (ref) { try { refHost = new URL(ref).hostname; } catch(e) {} }
+      var ua = navigator.userAgent || '';
+      var hint = /ChatGPT|OAI-/i.test(ua) ? 'chatgpt-app' : /Perplexity/i.test(ua) ? 'perplexity-app' : /Claude/i.test(ua) ? 'claude-app' : '';
+      gtag('event', 'ai_attribution', {
+        ai_utm: q.get('utm_source') || '(none)',
+        ai_ref: refHost || '(direct)',
+        ai_ua_hint: hint || '(none)'
+      });
+    } catch(e) {}
+  })();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Does Exercise Really Work as Well as Antidepressants? &mdash; depression.md</title>
+    <meta name="description" content="Cochrane found little to no difference between exercise and antidepressants in 5 small trials. What the 2024 BMJ analysis, SMILE trial, and umbrella reviews show.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://depression.md/blog/exercise-vs-antidepressants-for-depression/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://depression.md/blog/exercise-vs-antidepressants-for-depression/">
+    <meta property="og:title" content="Does Exercise Really Work as Well as Antidepressants? &mdash; depression.md">
+    <meta property="og:description" content="Cochrane found little to no difference between exercise and antidepressants in 5 small trials. What the 2024 BMJ analysis, SMILE trial, and umbrella reviews show.">
+    <meta property="og:site_name" content="depression.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Does Exercise Really Work as Well as Antidepressants? &mdash; depression.md">
+    <meta name="twitter:description" content="Cochrane found little to no difference between exercise and antidepressants in 5 small trials. What the 2024 BMJ analysis, SMILE trial, and umbrella reviews show.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="exercise for depression, exercise vs antidepressants, SMILE trial, Cochrane exercise depression, Noetel BMJ 2024, walking depression, strength training depression">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Article",
+        "MedicalWebPage"
+      ],
+      "@id": "https://depression.md/blog/exercise-vs-antidepressants-for-depression/#article",
+      "headline": "Does Exercise Really Work as Well as Antidepressants?",
+      "description": "Cochrane found little to no difference between exercise and antidepressants in 5 small trials. What the 2024 BMJ analysis, SMILE trial, and umbrella reviews show.",
+      "url": "https://depression.md/blog/exercise-vs-antidepressants-for-depression/",
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-04",
+      "author": {
+        "@type": "Organization",
+        "name": "thrive.md Editorial Team",
+        "url": "https://thrive.md"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "depression.md",
+        "url": "https://depression.md"
+      },
+      "isPartOf": {
+        "@id": "https://depression.md/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://depression.md/blog/exercise-vs-antidepressants-for-depression/#article"
+      },
+      "wordCount": "1373",
+      "contributor": {
+        "@type": "Person",
+        "name": "Agustin Arrieta, MD",
+        "jobTitle": "Otolaryngologist",
+        "medicalSpecialty": "Otolaryngologic"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take for exercise to improve depression?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the Duke trials, antidepressants worked faster in the first few weeks, but exercise had caught up by 16 weeks. Most trials in the large reviews ran 8 to 16 weeks. Expect gradual change over one to three months rather than a quick lift."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is walking enough, or do I need to run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Walking or jogging together had the largest effect of any exercise type in the 2024 BMJ analysis. Higher intensity produced bigger gains, so brisk walking beats strolling and jogging beats brisk walking. But light activity still helped, so start with what you can do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I stop my antidepressant if I exercise regularly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on your own. The head-to-head trials were small, and stopping medication early raises relapse risk. Talk with your prescriber about a taper plan. Keep exercising through the taper and afterward, since exercise during follow-up predicted lower relapse in the Duke studies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does exercise help severe depression?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2024 network meta-analysis found similar effects across baseline severity, but the evidence quality was low. NIMH says moderate or severe depression usually starts with medication. Use exercise alongside medication and therapy rather than instead of them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do experts still call the evidence low certainty if the effects look large?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You cannot blind people to exercise, and most trials relied on self-report questionnaires. Only one of 218 studies in the 2024 BMJ analysis met Cochrane criteria for low risk of bias. The direction of the effect is consistent, but its exact size is uncertain."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+    
+        /* Medical Advisor Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://depression.md/" class="site-logo">depression.md</a>
+            <nav class="site-nav">
+                <a href="https://depression.md/">Home</a>
+                <a href="https://depression.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>Does Exercise Really Work as Well as Antidepressants?</h1>
+                <div class="article-meta">
+                    <time datetime="2026-09-04">September 4, 2026</time>
+                    <span class="reading-time">7 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+                    <div class="medical-reviewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Medical advisor: Agustin Arrieta, MD &mdash; Otolaryngologist (ENT), South Florida</span></div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#what-do-the-big-reviews-say">What do the big reviews say?</a></li><li><a href="#what-happened-when-exercise-was-tested-against-sertraline">What happened when exercise was tested against sertraline?</a></li><li><a href="#what-kind-of-exercise-and-how-much">What kind of exercise, and how much?</a></li><li><a href="#where-does-exercise-fall-short">Where does exercise fall short?</a></li><li><a href="#should-you-combine-exercise-with-medication">Should you combine exercise with medication?</a></li><li><a href="#how-do-you-start-when-depression-drains-your-energy">How do you start when depression drains your energy?</a></li><li><a href="#the-bottom-line">The bottom line</a></li></ol></nav>
+
+            <div class="article-body">
+<p><strong>The short answer:</strong> For mild to moderate depression, yes, in most trials exercise has matched antidepressants. The largest Cochrane review found little to no difference between exercise and medication, and a 2024 BMJ network meta-analysis found walking, jogging, yoga, and strength training all cut symptoms by a moderate amount. The catch is that the head-to-head trials are few and small, and the evidence is low certainty. For severe depression, medication and therapy still come first, with exercise added on top.</p>
+
+<h2 id="what-do-the-big-reviews-say">What do the big reviews say?</h2>
+
+<p>Three large reviews carry most of the weight here. Each one asked a slightly different question.</p>
+
+<p>The <a href="https://pubmed.ncbi.nlm.nih.gov/41500513/">Cochrane review on exercise for depression</a> was updated in January 2026. It pooled 73 randomized trials with at least 4,985 adults. Across 57 trials, exercise beat no treatment or a control with a standardized mean difference of -0.67. That is a moderate effect. When the authors kept only the 7 trials with strong methods (concealed allocation, intention-to-treat analysis, and blinded raters), the effect shrank to -0.46. Five trials compared exercise directly with medication. The pooled difference was -0.11, which the authors describe as "little to no difference." They rated that evidence as low certainty.</p>
+
+<p>The <a href="https://pubmed.ncbi.nlm.nih.gov/38355154/">2024 BMJ network meta-analysis by Noetel and colleagues</a> took a wider view. It included 218 trials and 14,170 people who met clinical cutoffs for major depression. Compared with active controls such as usual care or a placebo pill, walking or jogging had a Hedges' g of -0.62, yoga -0.55, strength training -0.49, mixed aerobic exercise -0.43, and tai chi or qigong -0.42. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10870815/">full text</a> also reports a pooled effect of -0.26 for SSRIs alone and -0.55 for exercise combined with SSRIs in the same network. The authors caution that only one of the 218 studies met Cochrane criteria for low risk of bias. Their confidence was low for walking or jogging and very low for everything else.</p>
+
+<p>The <a href="https://pubmed.ncbi.nlm.nih.gov/36796860/">2023 umbrella review in the British Journal of Sports Medicine</a> summarized 97 systematic reviews covering 1,039 trials and 128,119 adults. Physical activity had a median effect size of -0.43 on depression symptoms compared with usual care. The largest benefits showed up in people already diagnosed with depression. Higher intensity was linked to bigger improvements. The authors concluded that physical activity "should be a mainstay approach" for depression.</p>
+
+<h2 id="what-happened-when-exercise-was-tested-against-sertraline">What happened when exercise was tested against sertraline?</h2>
+
+<p>The <a href="https://pubmed.ncbi.nlm.nih.gov/10547175/">first trial, published in 1999</a>, randomized 156 adults aged 50 and older with major depression to 16 weeks of aerobic exercise, sertraline, or both. At 16 weeks the three groups did not differ on depression scores. Medication worked faster in the first weeks, but exercise caught up. A <a href="https://pubmed.ncbi.nlm.nih.gov/11020092/">follow-up at 10 months</a> found that people who had recovered on exercise relapsed less often than those who had recovered on sertraline. People who kept exercising on their own during follow-up had about half the odds of being depressed at the end (odds ratio 0.49).</p>
+
+<p>The <a href="https://pubmed.ncbi.nlm.nih.gov/17846259/">SMILE study, published in 2007</a>, added a placebo arm. It randomized 202 adults with major depression to supervised group exercise, home-based exercise, sertraline (50 to 200 mg daily), or a placebo pill for 16 weeks. Remission rates were 45% for supervised exercise, 40% for home exercise, 47% for sertraline, and 31% for placebo. The difference between groups did not quite reach statistical significance (p = 0.057). The authors noted the high placebo response, which explains part of every treatment's effect.</p>
+
+<p>A <a href="https://pubmed.ncbi.nlm.nih.gov/21148807/">one-year follow-up of SMILE</a> found that the original group assignment no longer predicted who was in remission. What did predict remission was whether people exercised during the follow-up year. The benefit rose with weekly minutes and leveled off around 180 minutes per week.</p>
+
+<h2 id="what-kind-of-exercise-and-how-much">What kind of exercise, and how much?</h2>
+
+<ul>
+<li><strong>Type:</strong> Walking or jogging, yoga, and strength training had the largest effects. Mixed aerobic classes and tai chi were somewhat smaller but still helpful.</li>
+<li><strong>Intensity:</strong> Effects were proportional to the intensity prescribed. In the full text, vigorous exercise scored -0.74 and light activity -0.58.</li>
+<li><strong>Format:</strong> Yoga worked better in groups. Strength training and mixed aerobic exercise worked better done alone.</li>
+<li><strong>Who benefits from what:</strong> Strength training looked more effective for women and younger adults. Yoga looked more effective for men and older adults.</li>
+<li><strong>Dose:</strong> The SMILE follow-up put the useful range between 0 and 180 minutes per week. The <a href="https://www.nimh.nih.gov/health/publications/depression">NIMH depression booklet</a> gives a simpler target: "Just 30 minutes a day of walking can boost your mood."</li>
+</ul>
+
+<p>One caution from the umbrella review: effectiveness diminished with longer intervention periods. That may reflect fading adherence rather than fading benefit.</p>
+
+<h2 id="where-does-exercise-fall-short">Where does exercise fall short?</h2>
+
+<ol>
+<li><strong>Trial quality.</strong> You cannot blind someone to whether they ran three times a week. Most trials used self-report scales. The Cochrane authors judged every included study to be at high risk of performance bias.</li>
+<li><strong>Few direct comparisons.</strong> Cochrane found only 5 trials, with 330 people total, that put exercise against a drug. That is a small base for a confident "equal" verdict.</li>
+<li><strong>Selection.</strong> People in these trials agreed to be randomized to exercise. That means they were willing and able to show up. The trials cannot tell you much about someone who cannot get out of bed. Noetel's team found similar effects across severity levels, but with the same low certainty.</li>
+<li><strong>Adherence.</strong> In trials, drop-out rates for exercise were similar to other treatments. Outside a trial there is no coach and no schedule, and depression itself drains the motivation exercise requires.</li>
+</ol>
+
+<p>Antidepressants have their own drawbacks. The Cochrane update lists diarrhoea, sexual dysfunction, and fatigue as adverse events reported with sertraline. Exercise trials reported musculoskeletal injuries. See our page on <a href="/blog/depression-treatment-options-compared/">how depression treatments compare</a> for the fuller picture.</p>
+
+<h2 id="should-you-combine-exercise-with-medication">Should you combine exercise with medication?</h2>
+
+<p>NIMH states that people with moderate or severe depression usually start medication as part of the initial plan, while milder depression often starts with psychotherapy. Antidepressants take 4 to 8 weeks to work. Exercise can fill that gap and keep working afterward. In the Noetel network, exercise plus SSRIs had a larger pooled effect (-0.55) than SSRIs alone (-0.26), though the combination arms were small.</p>
+
+<p>Combining also helps with what happens later. Exercise during follow-up predicted lower relapse in both Duke studies. Medication protects you while you take it, and stopping it too early raises relapse risk. Our guide on <a href="/blog/how-long-to-stay-on-antidepressants/">how long to stay on antidepressants</a> covers that timeline.</p>
+
+<p>If you have tried two or more medications without relief, exercise alone is not the next step. Read about <a href="/blog/treatment-resistant-depression/">treatment-resistant depression</a> and talk to your prescriber about augmentation, therapy, or brain stimulation options.</p>
+
+<h2 id="how-do-you-start-when-depression-drains-your-energy">How do you start when depression drains your energy?</h2>
+
+<p>The trials that worked scheduled every session, often supervised it, and built the dose up slowly.</p>
+
+<ul>
+<li>Pick walking. It had the largest effect in the Noetel analysis and needs no equipment or skill.</li>
+<li>Start at 10 minutes. The SMILE follow-up showed benefit rising from zero, so any minutes count.</li>
+<li>Put it on a calendar at the same time each day. Treat it like a dose.</li>
+<li>Add intensity later, not first. Once the habit holds, faster walking or short jogs add benefit.</li>
+<li>Try strength training or yoga if walking bores you. Both were the most acceptable options in the 2024 analysis.</li>
+</ul>
+
+<p>The same question comes up for anxiety, where the evidence is weaker and exercise underperforms medication and CBT in direct trials. Our sibling site covers that in <a href="https://anxiety.md/blog/exercise-vs-medication-for-anxiety/">exercise versus medication for anxiety</a>.</p>
+
+<h2 id="the-bottom-line">The bottom line</h2>
+
+<p>Exercise works for depression. Every major review has found a moderate effect, and the few direct comparisons with antidepressants show no clear winner. Walking, jogging, yoga, and strength training have the best data. Harder workouts help more, and about 30 minutes most days is a reasonable target.</p>
+
+<p>The evidence is not strong enough to tell someone with severe depression to skip medication. It is strong enough to say that anyone treated for depression should be moving. If you want to stop medication in favor of exercise, that is a conversation to have with your prescriber, not a decision to make alone.</p>
+
+<p><em>Last updated: September 2026. This article is for informational purposes only and does not constitute medical advice. Talk to your doctor before starting, changing, or stopping any depression treatment. If you are in crisis, call or text 988.</em></p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>How long does it take for exercise to improve depression?</h3><p>In the Duke trials, antidepressants worked faster in the first few weeks, but exercise had caught up by 16 weeks. Most trials in the large reviews ran 8 to 16 weeks. Expect gradual change over one to three months rather than a quick lift.</p></div><div class="faq-item"><h3>Is walking enough, or do I need to run?</h3><p>Walking or jogging together had the largest effect of any exercise type in the 2024 BMJ analysis. Higher intensity produced bigger gains, so brisk walking beats strolling and jogging beats brisk walking. But light activity still helped, so start with what you can do.</p></div><div class="faq-item"><h3>Can I stop my antidepressant if I exercise regularly?</h3><p>Not on your own. The head-to-head trials were small, and stopping medication early raises relapse risk. Talk with your prescriber about a taper plan. Keep exercising through the taper and afterward, since exercise during follow-up predicted lower relapse in the Duke studies.</p></div><div class="faq-item"><h3>Does exercise help severe depression?</h3><p>The 2024 network meta-analysis found similar effects across baseline severity, but the evidence quality was low. NIMH says moderate or severe depression usually starts with medication. Use exercise alongside medication and therapy rather than instead of them.</p></div><div class="faq-item"><h3>Why do experts still call the evidence low certainty if the effects look large?</h3><p>You cannot blind people to exercise, and most trials relied on self-report questionnaires. Only one of 218 studies in the 2024 BMJ analysis met Cochrane criteria for low risk of bias. The direction of the effect is consistent, but its exact size is uncertain.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=Does%20Exercise%20Really%20Work%20as%20Well%20as%20Antidepressants%3F&url=https://depression.md/blog/exercise-vs-antidepressants-for-depression/" target="_blank" rel="noopener">&#120143; Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://depression.md/blog/exercise-vs-antidepressants-for-depression/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://anxiety.md/">anxiety.md</a><a href="https://mental.md/">mental.md</a><a href="https://insomnia.md/">insomnia.md</a><a href="https://thrive.md/">thrive.md</a><a href="https://calories.md/">calories.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 depression.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
